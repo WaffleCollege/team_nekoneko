@@ -9,11 +9,73 @@
     <button onclick="history.back()">戻る</button>
     <h1>Quiz</h1>
     <h2>主語に合わせて正しい活用形を選択してください！</h2>
-    <div class = "start_button">
-    <button>スタート！</button>
+    <div class="start_button">
+      <button onclick="func1()">スタート！</button>
     </div>
     <!--ここからクイズ機能？-->
 
+  <div class="progress-bar">
+    <div>
+      <div>
+        <progress id="myProgress" value="0" max="100">0%</progress>
+      </div>
+      <input type="button" id="myButton" onclick="func1()" value="スタート">
+      <input type="button" id="myButton2" onclick="func2()" value="ストップ">
+    </div>
 
+    <script language="javascript" type="text/javascript">
+      // プログレスバーの進捗値
+      var val;
+      // 一定間隔で処理を行うintervalのIDを保持
+      var intervalID;
+      // ストップボタンの状態を管理
+      var stopped = false;
+
+      // ボタンを押した時に動く関数
+      function func1() {
+        val = 0;
+        // ボタンを無効にする(何回も押せないように)
+        document.getElementById("myButton").disabled = true;
+        // 50msおきにプログレスバーを更新する
+        intervalID = setInterval(updateProgress, 50);
+        // ストップボタンのラベルを "ストップ" に変更
+        document.getElementById("myButton2").value = "ストップ";
+        // ストップ状態をリセット
+        stopped = false;
+      }
+
+      function func2(){
+        if (!stopped) {
+          // intervalID をクリアしてプログレスバーの更新を停止する
+          clearInterval(intervalID);
+          // ストップボタンのラベルを "再開" に変更
+          document.getElementById("myButton2").value = "再開";
+        } else {
+          // 50msおきにプログレスバーを再開する
+          intervalID = setInterval(updateProgress, 100);
+          // ストップボタンのラベルを "ストップ" に変更
+          document.getElementById("myButton2").value = "ストップ";
+        }
+        // ストップ状態を反転
+        stopped = !stopped;
+      }
+
+      // プログレスバーを更新する
+      function updateProgress() {
+        // プログレスバーの進捗値を更新し、プログレスバーに反映させる
+        val += 1;
+        document.getElementById("myProgress").value = val;
+        document.getElementById("myProgress").innerText = val + "%";
+        console.log("progress:", val, "%");
+
+        // 最大値まで達したら終了
+        if (val == 100) {
+          clearInterval(intervalID);
+          document.getElementById("myButton").disabled = false;
+        }
+      }
+    </script>
+
+  </div>
 </body>
 </html>
