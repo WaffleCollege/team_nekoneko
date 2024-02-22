@@ -20,3 +20,28 @@ h1{
     font-size: 50px;
     padding: 15px 20px;
 }
+
+/*ホームのトップ設定*/
+.page_title{
+    font-size:50px;
+  }
+  
+  
+  /*カテゴリボタンCSS 　スタート*/
+  .verb_category button {
+      background-color: #F4CA44; /* 背景色 */
+      color: white; /* 文字色 */
+      padding: 15px 32px; /* パディング */
+      text-align: center; /* 文字のアライメント */
+      text-decoration: none; /* 文字装飾 */
+      display: inline-block; /* ボタンの表示方法 */
+      font-size: 16px; /* フォントサイズ */
+      font-family: Arial, sans-serif; /* フォント */
+      margin: 4px 2px; /* 外側の余白 */
+      cursor: pointer; /* カーソル */
+      border: none; /* ボーダーなし */
+      border-radius: 5px; /* ボーダーの角丸 */
+  }
+  
+  /*カテゴリボタン CSS終わり*/
+  
