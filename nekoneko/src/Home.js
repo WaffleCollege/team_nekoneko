@@ -6,6 +6,7 @@ import {useAuthState} from "react-firebase-hooks/auth";
 
 function Home(){
     const [user] = useAuthState(auth);
+    const history = useHistory();
     
     return (
     <div>
@@ -15,7 +16,7 @@ function Home(){
                 <SignOutButton />
             </>
         ):(
-            <SignInButton />
+            <SignInButton history = {history} />
         )}
     </div>
     );
@@ -24,15 +25,17 @@ function Home(){
 export default Home;
 
 function SignInButton(){
-    const history = useHistory();
     const signInWithGoogle = () => {
         signInWithPopup(auth, provider)
         .then(() => {
         // ログイン成功時の処理
-            history.push("/index.html");  // ログイン後に遷移するURLを指定
+            //history.push("/index.html");  // ログイン後に遷移するURLを指定
+            window.location.href = "/index.html";  // ブラウザリダイレクト
+            
           })
           .catch((error) => {
             console.error("Firebase Authentication エラー:", error);
+
           });
 
     };

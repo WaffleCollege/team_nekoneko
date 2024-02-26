@@ -1,6 +1,11 @@
 .App {
   text-align: center;
   margin-top: 15rem;
+  
+}
+
+body{
+  background-color: #f08080;
 }
 
 p {
