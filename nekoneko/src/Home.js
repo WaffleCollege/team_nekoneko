@@ -4,12 +4,14 @@ import { useHistory } from "react-router-dom";
 import {auth, provider} from "./firebase";
 import {useAuthState} from "react-firebase-hooks/auth";
 
+
 function Home(){
     const [user] = useAuthState(auth);
     const history = useHistory();
     
     return (
     <div>
+        {!user && <h1>スペイン語学習を始める</h1>}
         {user ? (
             <>
                 <UserInfo />
@@ -18,19 +20,19 @@ function Home(){
         ):(
             <SignInButton history = {history} />
         )}
+        
     </div>
     );
 }
 
 export default Home;
 
-function SignInButton(){
+function SignInButton({ history }){
     const signInWithGoogle = () => {
         signInWithPopup(auth, provider)
         .then(() => {
         // ログイン成功時の処理
-            //history.push("/index.html");  // ログイン後に遷移するURLを指定
-            window.location.href = "/index.html";  // ブラウザリダイレクト
+            history.push("/dashboard");  // ログイン後に遷移するURLを指定
             
           })
           .catch((error) => {
