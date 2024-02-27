@@ -33,8 +33,44 @@ const quizDataEsp = [
         2: 'viajáis',
         3: 'viaja',
         correct: 2
-    }
+    },
+    {
+      question: 'ustedes | cerrar',
+      1: 'cerramos',
+      2: 'cierran',
+      3: 'cierra',
+      correct: 2
+  },
+  {
+    question: 'nosotras | trabajar',
+    1: 'trabajamos',
+    2: 'tarabajan',
+    3: 'trabajo',
+    correct: 1
+  },
+  {
+    question: 'yo | tomar',
+    1:'tomas',
+    2:'tomáis',
+    3:'tomo',
+    correct: 3
+  },
+  {
+    question: 'ella | cenar',
+    1: 'cena',
+    2: 'ceno',
+    3: 'cenas',
+    correct: 1
+},
+{
+  question: 'él | escuhar',
+  1: 'escucha',
+  2: 'escuchamos',
+  3: 'escucho',
+  correct: 1
+}
   ];
+
   
   export { quizDataEsp }
 
@@ -45,5 +81,5 @@ const quizDataEsp = [
     2: '',
     3: '',
     correct:
-}
+},
 */
