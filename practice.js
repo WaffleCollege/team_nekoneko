@@ -28,17 +28,21 @@ const v6 = document.getElementById("v6");
 
 let verbNumber = 0;
 
-/*最初のスタートボタン押された時の処理*/
+/*スタートボタンとbgm取得 */
 const startButton = document.getElementById('startButton');
-const backgroundMusic = new Audio('https://cdn.glitch.global/8786df1a-f096-4829-a893-611c6d6adb1b/bgm_input.mp3?v=1709016733813');
+const backgroundMusic = new Audio('audio_bgm_input.mp3');
+/*最初のスタートボタン押された時の処理*/
 startButton.addEventListener('click', () => {
+    /*ボタン消す*/
     startButton.style.display = 'none';
+    /*cssファイルを変える*/
     document.querySelector("link[href='input.css']").href = "practice.css";
+    /*bgmスタートする*/
     backgroundMusic.play();
-    /*時間指定で繰り返し処理する*/
     setContent();
+    /*時間指定して繰り返し処理する*/
     const interval = setInterval(setContent, 16000);
-      /*繰り返したい処理ここから*/
+    /*繰り返したい処理ここから*/
   function setContent() {
     if (verbNumber === conjugationList.length) {
       clearInterval(interval);
@@ -54,28 +58,29 @@ startButton.addEventListener('click', () => {
       v2.textContent = "";
       v3.textContent = "";
       v4.textContent = "";
+      v5.textContent = "";
       v6.textContent = "";
-    } else {
-    verbName.textContent = conjugationList[verbNumber][0];
-    /*主語と動詞の表示を更新する*/
-    s1.textContent = subjectList[0];
-    s2.textContent = subjectList[1];
-    s3.textContent = subjectList[2];
-    s4.textContent = subjectList[3];
-    s5.textContent = subjectList[4];
-    s6.textContent = subjectList[5];
+  } else {
+      verbName.textContent = conjugationList[verbNumber][0];
+      /*主語と動詞の表示を更新する*/
+      s1.textContent = subjectList[0];
+      s2.textContent = subjectList[1];
+      s3.textContent = subjectList[2];
+      s4.textContent = subjectList[3];
+      s5.textContent = subjectList[4];
+      s6.textContent = subjectList[5];
 
-    v1.textContent = conjugationList[verbNumber][1];
-    v2.textContent = conjugationList[verbNumber][2];
-    v3.textContent = conjugationList[verbNumber][3];
-    v4.textContent = conjugationList[verbNumber][4];
-    v5.textContent = conjugationList[verbNumber][5];
-    v6.textContent = conjugationList[verbNumber][6];
+      v1.textContent = conjugationList[verbNumber][1];
+      v2.textContent = conjugationList[verbNumber][2];
+      v3.textContent = conjugationList[verbNumber][3];
+      v4.textContent = conjugationList[verbNumber][4];
+      v5.textContent = conjugationList[verbNumber][5];
+      v6.textContent = conjugationList[verbNumber][6];
 
-    verbNumber++;
+      verbNumber++;
   }
-}
-/*ここまで*/
+  }
+  /*ここまで*/
 
 })
 

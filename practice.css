@@ -146,15 +146,11 @@ body {
 
 
 @keyframes animation_text_blink {
-  2%{
-    opacity:1;
-    color:gray;
-  }
-  3%{
+  0%{
     opacity:1;
     color:orange;
   }
-  25%{
+  20%{
     opacity:1;
     color:gray;
   }
