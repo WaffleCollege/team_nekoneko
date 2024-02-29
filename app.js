@@ -39,7 +39,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/input/practice', (req, res) => {
   res.sendFile(__dirname + '/public/input.html');
-  console.log(`Hello, ${req.query.name}`);
 })
 
 app.get('/input/list', (req, res) => {
