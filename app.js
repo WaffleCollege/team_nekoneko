@@ -29,7 +29,19 @@ app.get('/select.html', (request, req) => {
       });
 });
 
-
 app.listen(8080, () => {
   console.log('server running on port 8080');
 });
+
+//メイリー追加
+const path = require('path')
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/input/practice', (req, res) => {
+  res.sendFile(__dirname + '/public/input.html');
+})
+
+app.get('/input/list', (req, res) => {
+  res.sendFile(__dirname + '/public/input-list.html');
+  console.log(`Hello, ${req.query.name}`);
+})
