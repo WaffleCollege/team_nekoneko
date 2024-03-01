@@ -2,9 +2,28 @@
 
 body {
     background-color: #F4CA44;
-    text-align:center;
   }
   
   
-  
-  
+  .start_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-style: normal;
+    align-items: center;
+    
+
+    
+}
+
+.start_button button {
+    font-family: "Zen Maru Gothic", sans-serif;
+    margin: 0 10px; 
+    font-size: 50px;
+    font-weight: 400;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: azure;
+    background-color: #5a3527;
+}
+

@@ -21,7 +21,7 @@ import {conjugationList} from '/conjugationList.js';
 const newConjugationList = conjugationList[paramLevel]
 console.log(newConjugationList)
 
-/*主語と動詞の部分を取得する*/
+/*主語と動詞の部分とかを取得する*/
 const verbName = document.getElementById("verb_name");
 const s1 = document.getElementById("s1");
 const s2 = document.getElementById("s2");
@@ -36,6 +36,7 @@ const v4 = document.getElementById("v4");
 const v5 = document.getElementById("v5");
 const v6 = document.getElementById("v6");
 
+const end_txt = document.getElementById("end_txt")
 let verbNumber = 0;
 
 /*スタートボタンとbgm取得 */
@@ -57,8 +58,9 @@ startButton.addEventListener('click', () => {
     //練習終了後に表示するもの
     if (verbNumber === newConjugationList.length) {
       clearInterval(interval);
+      end_txt.textContent = "Muy bien! お疲れさまでした💫";
       verbName.textContent = "";
-      s1.textContent = "Muy bien! お疲れさまでした💫";
+      s1.textContent = "";
       s2.textContent = "";
       s3.textContent = "";
       s4.textContent = "";
