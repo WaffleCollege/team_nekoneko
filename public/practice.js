@@ -21,7 +21,7 @@ import {conjugationList} from '/conjugationList.js';
 const newConjugationList = conjugationList[paramLevel]
 console.log(newConjugationList)
 
-/*主語と動詞の部分を取得する*/
+/*主語と動詞の部分とかを取得する*/
 const verbName = document.getElementById("verb_name");
 const s1 = document.getElementById("s1");
 const s2 = document.getElementById("s2");
@@ -36,15 +36,22 @@ const v4 = document.getElementById("v4");
 const v5 = document.getElementById("v5");
 const v6 = document.getElementById("v6");
 
+const end_txt = document.getElementById("end_txt")
 let verbNumber = 0;
 
-/*スタートボタンとbgm取得 */
+/*スタート画面とbgm取得 */
 const startButton = document.getElementById('startButton');
+const start_title = document.getElementById('start_title');
+const start_description = document.getElementById('start_description');
 const backgroundMusic = new Audio('/audio_bgm_input.mp3');
+
 /*最初のスタートボタン押された時の処理*/
 startButton.addEventListener('click', () => {
-    /*ボタン消す*/
+    /*スタート画面消す*/
     startButton.style.display = 'none';
+    start_title.style.display = 'none';
+    start_description.style.display = 'none';
+
     /*cssファイルを変える*/
     document.querySelector("link[href='/input.css']").href = "/practice.css";
     /*bgmスタートする*/
@@ -57,8 +64,9 @@ startButton.addEventListener('click', () => {
     //練習終了後に表示するもの
     if (verbNumber === newConjugationList.length) {
       clearInterval(interval);
+      end_txt.innerHTML = "Muy bien! <br> お疲れさまでした💫";
       verbName.textContent = "";
-      s1.textContent = "Muy bien! お疲れさまでした💫";
+      s1.textContent = "";
       s2.textContent = "";
       s3.textContent = "";
       s4.textContent = "";
@@ -71,6 +79,7 @@ startButton.addEventListener('click', () => {
       v4.textContent = "";
       v5.textContent = "";
       v6.textContent = "";
+
   } else {
       verbName.textContent = newConjugationList[verbNumber][0];
       /*主語と動詞の表示を更新する*/

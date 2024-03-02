@@ -1,13 +1,8 @@
 /*共通CSS スタート*/
 body{
-    background-color: #FFF3B8;
+    background-color: #fff3b8;
+    font-family: "Zen Maru Gothic", serif;
   }
-  
-  .home_top{
-    background-color: #F4CA44;
-    padding:30px;
-  }
-  
   h1{
       text-align: center;
       font-size: 100px;
@@ -51,8 +46,10 @@ body{
   
   /*ナビゲーション設定　終わり*/
   /*main_contents 設定スタート*/
-  .main_contents{
-    margin:30px;
+ .main_contents{
+    padding:5%;
+   /* padding:4%;
+    background-color: #FFF3B8;*/
   }
   /*main_contents 設定終わり*/
   /*共通CSS終了*/
@@ -75,3 +72,10 @@ body{
   
   /*カテゴリボタン CSS終わり*/
   
+  /*ナビゲーション　フォント*/
+  
+  .navbar-nav .nav-link {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 16px; /* フォントサイズを適切なサイズに変更 */
+    /* 他のスタイルも必要に応じて追加 */
+  }
