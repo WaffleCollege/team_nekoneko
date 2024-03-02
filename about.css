@@ -1,12 +1,9 @@
 /*共通CSS スタート*/
 body{
     background-color: #FFF3B8;
+    font-family: "Zen Maru Gothic", sans-serif 
   }
   
-  .home_top{
-    background-color: #F4CA44;
-    padding:30px;
-  }
   
   h1{
       text-align: center;
