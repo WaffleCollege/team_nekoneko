@@ -10,9 +10,7 @@ body {
     justify-content: center;
     margin-top: 80px;
     font-style: normal;
-    align-items: center;
-    
-
+    align-items: center;   
     
 }
 
@@ -39,7 +37,7 @@ body {
 
 #start_description {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Zen Maru Gothic", sans-serif;
   font-style: normal;
   font-weight: 900;

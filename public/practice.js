@@ -39,13 +39,19 @@ const v6 = document.getElementById("v6");
 const end_txt = document.getElementById("end_txt")
 let verbNumber = 0;
 
-/*スタートボタンとbgm取得 */
+/*スタート画面とbgm取得 */
 const startButton = document.getElementById('startButton');
+const start_title = document.getElementById('start_title');
+const start_description = document.getElementById('start_description');
 const backgroundMusic = new Audio('/audio_bgm_input.mp3');
+
 /*最初のスタートボタン押された時の処理*/
 startButton.addEventListener('click', () => {
-    /*ボタン消す*/
+    /*スタート画面消す*/
     startButton.style.display = 'none';
+    start_title.style.display = 'none';
+    start_description.style.display = 'none';
+
     /*cssファイルを変える*/
     document.querySelector("link[href='/input.css']").href = "/practice.css";
     /*bgmスタートする*/
@@ -58,7 +64,7 @@ startButton.addEventListener('click', () => {
     //練習終了後に表示するもの
     if (verbNumber === newConjugationList.length) {
       clearInterval(interval);
-      end_txt.textContent = "Muy bien! お疲れさまでした💫";
+      end_txt.innerHTML = "Muy bien! <br> お疲れさまでした💫";
       verbName.textContent = "";
       s1.textContent = "";
       s2.textContent = "";
@@ -73,6 +79,7 @@ startButton.addEventListener('click', () => {
       v4.textContent = "";
       v5.textContent = "";
       v6.textContent = "";
+
   } else {
       verbName.textContent = newConjugationList[verbNumber][0];
       /*主語と動詞の表示を更新する*/
