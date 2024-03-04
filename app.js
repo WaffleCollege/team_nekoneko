@@ -45,3 +45,12 @@ app.get('/input/list', (req, res) => {
   res.sendFile(__dirname + '/public/input-list.html');
   console.log(`Hello, ${req.query.name}`);
 })
+
+
+app.get('/quiz/select', (req, res) => {
+  res.sendFile(__dirname + '/public/select.html');
+})
+
+app.get('/quiz/list', (req, res) => {
+  res.sendFile(__dirname + '/public/quiz-list.html');
+})
