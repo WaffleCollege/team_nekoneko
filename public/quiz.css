@@ -21,6 +21,19 @@ h2{
     font-weight: 900;
     margin-top: 50px !important;
 }
+h3{
+    text-align: left;
+    font-size: 20px;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    margin-top: 50px !important;
+}
+
+.result-box{
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -68,9 +81,8 @@ h2{
 
 .next{
     display: flex;
-    justify-content: right;
-    align-items: right;
-    height: 30vh;
+    justify-content: center;
+    height: 10vh;
 }
 
 .next button{
