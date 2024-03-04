@@ -72,6 +72,34 @@ if ($_POST) {
 <body>
     <div class="container">
         <div class="mx-auto" style="width: 400px;">
+            <style>
+            .container {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .form-container {
+                width: 400px;
+                text-align: center;
+            }
+
+            body {
+                background-color: #FFF3B8;
+            }
+
+            h1 {
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            div.button {
+                text-align: center;
+            }
+            </style>
+            <h1>スペイン語学習をはじめる</h1>
 
             <?php
             if ($errmessage) {
@@ -91,7 +119,9 @@ if ($_POST) {
                 </div>
             </form>
 
-            <a href="./register.php">新規登録</a>
+            <div style="text-align: center; margin-top: 10px;">
+                <a href="./register.php">新規登録</a>
+            </div>
         </div>
 
     </div>
