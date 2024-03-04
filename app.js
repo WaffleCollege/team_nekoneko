@@ -35,6 +35,7 @@ app.listen(8080, () => {
 
 //メイリー追加
 const path = require('path')
+//↓これでpublicフォルダ内にあるファイルを表示できる
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/input/practice', (req, res) => {
