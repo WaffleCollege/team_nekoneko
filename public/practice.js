@@ -19,7 +19,6 @@ console.log(paramLevel, 'paramLevel');
 import {conjugationList} from '/conjugationList.js';
 //conjugatinoListからparamLevelをキーにもつ活用が入った配列を取得する
 const newConjugationList = conjugationList[paramLevel]
-console.log(newConjugationList)
 
 /*主語と動詞の部分とかを取得する*/
 const verbName = document.getElementById("verb_name");

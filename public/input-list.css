@@ -29,21 +29,9 @@ body{
   /*ページトップ設定終わり*/
   
   /* ナビゲーション 設定 */
-  ul {
-    display: flex;
-    
-  }
-  
-  li {
-    list-style: none;
-  }
   a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin-right: 35px;
+    margin-right: 30px;
   }
-  
   /*ナビゲーション設定　終わり*/
   /*main_contents 設定スタート*/
  .main_contents{

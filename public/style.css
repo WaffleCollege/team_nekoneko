@@ -42,6 +42,10 @@ h1{
     /* 他のスタイルも必要に応じて追加 */
   }
 
+  a {
+    margin-right: 30px;
+  }
+
 /* .zen-maru gothic-regular {
     font-family: "Zen Maru Gothic", serif;
     font-weight: 400;
