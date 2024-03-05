@@ -7,11 +7,13 @@
     <title>スペイン語学習</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <link
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+/>
+<link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
@@ -42,10 +44,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="quiz-list.html">活用クイズ</a>
+              <a class="nav-link" href="quiz/list">活用クイズ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="input-list.html">活用練習</a>
+              <a class="nav-link" href="input/list">活用練習</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">使い方</a>
@@ -57,12 +59,46 @@
         </div>
       </div>
     </nav>
-    <h1>スペイン語活用練習</h1>
-    <div class="select_button">
-      <button onclick="location.href='./quiz-list.html'">クイズ</button>
-      <button onclick="location.href='./input.html'">練習する</button>
-    </div>
-    <script
+    <div class = "top_contents">
+      <p>スペイン語の活用の練習ができる</p>
+      <h1>スペイン語活用練習</h1>
+      <div class = "select_button">
+          <button onclick="location.href='quiz/list'">活用クイズをする</button>
+          <button onclick="location.href='input/list'">活用を練習する</button>
+      </div>
+      </div>
+      <div class = "main_contents">
+      <h2 class = "content_title">スペイン語活用練習の特徴</h2>
+      <div class = "features">
+      <div class = "feature">
+        <img class = "feature_img" src = "question.png"><br>
+        <p>活用を覚えられたか<br>クイズで確認できます！</p>
+      </div>
+      <div class = "feature">
+        <img class = "feature_img" src = "headphone.png"><br>
+        <p>活用を発音しながら<br>楽しく覚えることができます</p>
+      </div>
+      <div class = "feature">
+        <img class = "feature_img" src = "folder.png"><br>
+        <p><span class = "quiz_number"></span>問のクイズ<br><span class = "input_number"></span>単語の練習<br>ができます</p>
+      </div>
+      </div>
+      <div class = "jump_to_content">
+        <h2 class = "content_title">つかってみる！</h2>
+        <div class = "jump_boxes">
+          <div class = "jump_box">
+            <p>クイズ</h3><br>
+            <button onclick="location.href='quiz/list'">クイズをはじめる</button>
+          </div>
+          <!--ボタン動くか確認する！-->
+          <div class = "jump_box">
+            <p>活用練習</h3><br>
+            <button onclick="location.href='input/list'">練習をはじめる</button>
+          </div>
+        </div>
+      </div>
+  </div>
+      <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
