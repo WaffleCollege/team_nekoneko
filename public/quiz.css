@@ -124,3 +124,8 @@ h3{
     clip-path: circle();
 }
 */
+
+  /*ナビゲーション設定　スタート*/
+  a {
+    margin-right: 20px;
+  }
