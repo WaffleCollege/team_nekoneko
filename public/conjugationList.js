@@ -2,16 +2,16 @@
 
 export const conjugationList = {
   arlv1: [
-    ["CENAR | 夜ご飯を食べる", "ceno", "cenas", "cena", "cenamos", "cenáis", "cenan"],
+    ["HABLAR | 話す", "hablo", "hablas", "habla", "hablamos", "habláis", "hablan"],
     ["ESTUDIAR | 勉強する","estudio", "estudias","estudia","estudiamos","estudiáis", "estudian"],
     ["CENAR | 夜ご飯を食べる", "ceno", "cenas", "cena", "cenamos", "cenáis", "cenan"],
-      ["ESCUCHAR | 歌う", "escucho", "escuchas", "escucha", "escuchamos", "escucháis", "escuchan"]
-      ["COMPRAR | 買う","compro", "compras","compra","compramos","compráis", "compran"]
+    ["ESCUCHAR | 歌う", "escucho", "escuchas", "escucha", "escuchamos", "escucháis", "escuchan"],
+    ["COMPRAR | 買う","compro", "compras","compra","compramos","compráis", "compran"]
     ],
   arlv2: [
-      ["|", "", "", "", "", "", ""],
-      ["|", "", "", "", "", "", ""],
-      ["|", "", "", "", "", "", ""],
+      ["MIRAR | みる", "miro", "miras", "mira", "miramos", "miráis", "miran"],
+      ["ENTRAR | 入る", "entro", "entras", "entra", "entramos", "entráis", "entran"],
+      ["TRABAJAR | 働く", "trabajo", "trabajas", "trabaja", "trabajamos", "", ""],
       ["|", "", "", "", "", "", ""],
       ["|", "", "", "", "", "", ""]
     ],
