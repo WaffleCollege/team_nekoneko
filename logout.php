@@ -1,11 +1,3 @@
-<?php
-session_start();
-$_SESSION = array();
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -14,6 +6,7 @@ $_SESSION = array();
     <title>ログアウト</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="icon" href="../public/icon.png">
 
 </head>
 
@@ -46,11 +39,16 @@ div.button {
 </style>
 
 <body>
+<?php
+session_start();
+$_SESSION = array();
+
+?>
     <div class="container">
         <div class="mx-auto" style="width: 400px;">
             <h1>ログアウトしました</h1>
             <div style="text-align: center; margin-top: 10px;">
-                <a href="./login.php">ログインする</a>
+                <a href="login.html">ログインする</a>
             </div>
         </div>
     </div>

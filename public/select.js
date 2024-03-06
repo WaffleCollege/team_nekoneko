@@ -46,10 +46,12 @@ text2.innerHTML = quizDataEsp[quizNum]["2"];
 text3.innerHTML = quizDataEsp[quizNum]["3"];
 //質問文要素取得
 const questionElm = document.getElementById('question');
+var $target = $('.question_font');
+$target.addClass('flip');
 //正解文要素取得
 const correctText = document.getElementById('correctText');
  // 質問文を表示
-questionElm.innerHTML = quizDataEsp[quizNum]["question"];  
+questionElm.innerHTML = quizDataEsp[quizNum]["question"]; 
 //次の問題へのボタン取得
 const nextElm = document.getElementById('nextSelect');
 let next= document.getElementById('next');
@@ -60,6 +62,7 @@ let result2 = document.getElementById('result2');
 ////////////////////////////////////////
 //解答
 let correct;
+
 
 //回答と解答を取得し、正誤判定
 function judge(selectedValue){
@@ -73,6 +76,7 @@ function judge(selectedValue){
         correctText.style.visibility = "visible";
         correctText.innerHTML = quizDataEsp[quizNum]["display"];
         quizNum++; 
+        $target.removeClass("flip");
     //不正解
     }else{
         questionElm.innerHTML = "不正解!もう一度！";
@@ -113,6 +117,7 @@ nextElm.addEventListener('click',event =>{
     text3.innerHTML = quizDataEsp[quizNum]["3"];
     // 質問文を表示
     questionElm.innerHTML = quizDataEsp[quizNum]["question"];  
+    $target.addClass('flip');
     next.innerHTML = "次の問題へ"
     }else{
         questionElm.innerHTML = "リザルト"; 
@@ -185,3 +190,21 @@ function selectedEvent(){
     }
 }
 */
+/*
+$(window).on('load', function() {//スクロールしたとき
+    var $target = $('.question_font');//アニメーションさせたい要素
+    var offset = 100;//アニメーションタイミング
+  
+    var scroll = $(window).scrollTop();//スクロール量を取得
+    var h = $(window).height();//画面の高さを取得
+  
+    $target.each(function() {
+        console.log("aa");
+      var pos = $(this).offset().top;//アニメーションさせたい要素の位置を取得
+      if (scroll > pos - (h/2) + offset) {//スクロール量 > アニメーションさせたい要素の位置
+        $(this).addClass('flip');
+      }
+    })
+  
+  })
+  */
