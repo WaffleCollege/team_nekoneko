@@ -1,11 +1,3 @@
-<?php
-session_start();
-$_SESSION = array();
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -47,11 +39,16 @@ div.button {
 </style>
 
 <body>
+<?php
+session_start();
+$_SESSION = array();
+
+?>
     <div class="container">
         <div class="mx-auto" style="width: 400px;">
             <h1>ログアウトしました</h1>
             <div style="text-align: center; margin-top: 10px;">
-                <a href="./login.php">ログインする</a>
+                <a href="login.html">ログインする</a>
             </div>
         </div>
     </div>
