@@ -60,11 +60,13 @@ if ($_POST) {
 <head>
     <meta charset="utf-8">
     <title>ログインフォーム</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="icon" href="../public/icon.png">
     <style>
-        div.button {
-            text-align: center;
-        }
+    div.button {
+        text-align: center;
+    }
     </style>
 </head>
 
@@ -72,31 +74,31 @@ if ($_POST) {
     <div class="container">
         <div class="mx-auto" style="width: 400px;">
             <style>
-                .container {
-                    height: 100vh;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
+            .container {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-                .form-container {
-                    width: 400px;
-                    text-align: center;
-                }
+            .form-container {
+                width: 400px;
+                text-align: center;
+            }
 
-                body {
-                    background-color: #FFF3B8;
-                }
+            body {
+                background-color: #FFF3B8;
+            }
 
-                h1 {
-                    font-size: 32px;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
+            h1 {
+                font-size: 32px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
 
-                div.button {
-                    text-align: center;
-                }
+            div.button {
+                text-align: center;
+            }
             </style>
             <h1>スペイン語学習をはじめる</h1>
 
@@ -110,7 +112,8 @@ if ($_POST) {
             ?>
 
             <form action="./login.php" method="post">
-                Eメール <input type="email" name="e" value="<?php echo htmlspecialchars($_POST["e"]) ?>" class="form-control"><br>
+                Eメール <input type="email" name="e" value="<?php echo htmlspecialchars($_POST["e"]) ?>"
+                    class="form-control"><br>
                 パスワード <input type="password" name="p" value="" class="form-control"><br>
                 <div class="button">
                     <input type="submit" name="login" value="ログイン" class="btn-warning btn-lg">
