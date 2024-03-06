@@ -19,17 +19,19 @@ h2{
     font-family: "Zen Maru Gothic", sans-serif;
     font-style: normal;
     font-weight: 900;
-    margin-top: 50px !important;
+    margin-top: 30px !important;
 }
 h3{
-    text-align: left;
-    font-size: 20px;
+    text-align: center;
+    font-size: 100px;
     font-family: "Zen Maru Gothic", sans-serif;
     font-style: normal;
-    font-weight: 200;
-    margin-top: 50px !important;
+    font-weight: 900;
+    margin-top: 60px !important;
 }
-
+.question_font{
+    font-size: 100px;
+}
 .result-box{
     display: flex;
     justify-content: center;
@@ -129,3 +131,38 @@ h3{
   a {
     margin-right: 20px;
   }
+
+  .flip{
+	-webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  
