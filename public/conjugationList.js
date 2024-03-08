@@ -33,8 +33,8 @@ export const conjugationList = {
     ["VIVIR | 住む", "vivo", "vives", "vive", "vivimos", "vivís", "viven"],
     ["ESCRIBIR | 書く", "voy", "vas", "va", "vamos", "váis", "van"],
     ["ASISTIR | 参加する", "asisto", "asistes",'asiste', 'asistimos', "asistís", "asisten" ],
-    ["MIRAR |", "", "", "", "", "", ""],
-    ["DECIDIR |", "", "", "", "", "", ""]
+    ["ABRIR | 開く", "abro", "abres", "abre", "abremos", "abrís", "abren"],
+    ["DECIDIR | 決める", "decido", "decides", "decide", "decidemos", "decidís", "deciden"]
   ],
   irreglv1: [
     ["SER |", "soy", "eres", "es", "somos", "sois", "son"],
