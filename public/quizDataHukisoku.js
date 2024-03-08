@@ -1,6 +1,6 @@
 const quizDataHukisoku = [
     {
-      question: "nosotros | estar",
+      question: "nosotros | ser",
       1: "es",
       2: "somos",
       3: "sois",
@@ -8,15 +8,15 @@ const quizDataHukisoku = [
       display: "nosotros somos",
     },
     {
-      question: "estar | yo",
+      question: "yo | estar",
       1: "estoy",
       2: "estás",
-      3: "estan",
+      3: "están",
       correct: 1,
       display: "yo estoy",
     },
     {
-      question: "poder | ustedes",
+      question: "ustedes | poner",
       1: "pueden",
       2: "puede",
       3: "podéis",
@@ -24,7 +24,7 @@ const quizDataHukisoku = [
       display: "ustedes pueden",
     },
     {
-      question: "dar | él",
+      question: "él | dar",
       1: "damos",
       2: "dais",
       3: "da",
@@ -32,7 +32,7 @@ const quizDataHukisoku = [
       display: "él da",
     },
     {
-      question: "saber | yo",
+      question: "yo | saber",
       1: "sabes",
       2: "sé",
       3: "sabemos",
@@ -40,7 +40,7 @@ const quizDataHukisoku = [
       display: "yo sé",
     },
     {
-      question: "conocer | yo",
+      question: "yo | conocer",
       1: "conoce",
       2: "conozco",
       3: "conocéis",
@@ -48,7 +48,7 @@ const quizDataHukisoku = [
       display: "yo conozco",
     },
     {
-      question: "querer | nosotras",
+      question: "nosotras | querer",
       1: "quiere",
       2: "queremos",
       3: "quieren",
@@ -56,7 +56,7 @@ const quizDataHukisoku = [
       display: "nosotras queremos",
     },
     {
-      question: "venir | vosotras",
+      question: "vosotras | venir",
       1: "viene",
       2: "venimos",
       3: "venís",
@@ -64,7 +64,7 @@ const quizDataHukisoku = [
       display: "vosotras venís",
     },
     {
-      question: "sentir | tú",
+      question: "tú | sentir",
       1: "sientes",
       2: "sienten",
       3: "sentís",
@@ -72,7 +72,7 @@ const quizDataHukisoku = [
       display: "tú sientes",
     },
     {
-      question: "poner | yo",
+      question: "yo | poner",
       1: "ponrd",
       2: "pongo",
       3: "pone",
